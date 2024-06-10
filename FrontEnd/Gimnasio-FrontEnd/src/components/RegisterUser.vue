@@ -4,11 +4,27 @@
         <div class="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
             <div class="mt-12 flex flex-col items-center">
                 <h1 class="text-2xl xl:text-3xl font-extrabold">
-                    Sign up
+                    Registrarse
                 </h1>
                 <div class="w-full flex-1 mt-8 grid-cols-2">
-                    <div class="grid grid-rows-2 grid-cols-2 gap-1">
-                        
+                    <div class="gap-1">
+                        <form>
+                            <Usuario></Usuario>
+                            <Persona></Persona>
+    
+                            
+
+                            <p class="mt-6 text-xs text-gray-600 text-center col-span-2">
+                                I agree to abide by templatana's
+                                <a href="#" class="border-b border-gray-500 border-dotted">
+                                    Terms of Service
+                                </a>
+                                and its
+                                <a href="#" class="border-b border-gray-500 border-dotted">
+                                    Privacy Policy
+                                </a>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
