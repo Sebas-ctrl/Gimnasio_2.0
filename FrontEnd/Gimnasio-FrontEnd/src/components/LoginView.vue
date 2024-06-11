@@ -30,7 +30,7 @@
                                     Continuar con Google
                                 </span>
                             </button>
-    
+
                             <button
                                 class="w-full  font-bold shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline mt-5">
                                 <div class="bg-white p-1 rounded-full">
@@ -44,19 +44,19 @@
                                 </span>
                             </button>
                         </div>
-    
+
                         <div class="my-12 border-b text-center">
                             <div
                                 class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
                                 O iniciar sesión con e-mail
                             </div>
                         </div>
-    
-                        <div class="w-full">
-                            
-                            <FormLogin />
-                            
 
+                        <div class="w-full">
+
+                            <FormLogin />
+
+                            <p class="mt-5">¿No tienes una cuenta? <span><a href="/register" class="text-blue-700">Regístrate</a></span></p>
                             <p class="mt-6 text-xs text-gray-600 text-center">
                                 I agree to abide by templatana's
                                 <a href="#" class="border-b border-gray-500 border-dotted">
@@ -71,10 +71,10 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-1 bg-gray-500 text-center hidden lg:flex " style="background-image: url('https://i.pinimg.com/564x/15/4d/99/154d991c01ffff1a0ad2cecba033d509.jpg');">
+            <div class="flex-1 bg-gray-500 text-center hidden lg:flex "
+                style="background-image: url('https://i.pinimg.com/564x/15/4d/99/154d991c01ffff1a0ad2cecba033d509.jpg');">
                 <div class="m-12 xl:m-16 w-10/12 bg-contain bg-center bg-no-repeat "
-                    style="background-image: url('https://i.ibb.co/pdP0hjc/logo-gimnasio.png');"
-                    >
+                    style="background-image: url('https://i.ibb.co/pdP0hjc/logo-gimnasio.png');">
                 </div>
             </div>
         </div>
@@ -82,11 +82,11 @@
 </template>
 
 <script>
-    import FormLogin from './FormLogin.vue';
+import FormLogin from './FormLogin.vue';
 
-    export default {
-        components: {
-            FormLogin
-        }
+export default {
+    components: {
+        FormLogin
     }
+}
 </script>

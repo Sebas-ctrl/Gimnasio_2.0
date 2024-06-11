@@ -10,7 +10,7 @@
                         <div class="gap-1">
                             <Persona />
                             <Usuario />
-                            
+                            <p class="mt-5">¿Ya tienes una cuenta? <span><a href="/" class="text-blue-700">Inicia sesión</a></span></p>
                             <p class="mt-6 text-xs text-gray-600 text-center col-span-2">
                                 I agree to abide by templatana's
                                 <a href="#" class="border-b border-gray-500 border-dotted">
