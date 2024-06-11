@@ -3,7 +3,7 @@ import LoginView from '@/components/LoginView.vue'
 import RegisterUser from '@/components/RegisterUser.vue'
 import  Home from '@/components/Home.vue'
 import Menu from '@/components/Menu.vue'
-import Persona from '@/components/Persona.vue'
+import ListaPersonas from '@/components/ListaPersonas.vue'
 import Dashboard from '@/components/Dashboard.vue'
 import Miembros from '@/components/Miembros.vue'
 import Membresias from '@/components/Membresias.vue'
@@ -28,7 +28,7 @@ const router = createRouter({
       name: 'home',
       component: Menu,
       children: [
-        {path: '/personas', name: 'personas', component: Persona},
+        {path: '/personas', name: 'personas', component: ListaPersonas},
         {path: '/dashboard', name: 'dashboard', component: Dashboard},
         {path: '/miembros', name: 'miembros', component: Miembros},
         {path: '/membresias', name: 'membresias', component: Membresias},

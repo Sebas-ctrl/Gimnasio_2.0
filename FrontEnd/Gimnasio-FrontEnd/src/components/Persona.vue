@@ -32,9 +32,8 @@
             class="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
             type="date" placeholder="Fecha de Nacimiento" />
 
-        <label for="" class="font-medium col-span-2 ">Fotografia</label>
         <input
-            class="w-full px-1 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-1 col-span-2"
+            class="w-full px-1 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5 col-span-2"
             type="file" placeholder="Fotografia" />
         <a href="/" class="col-span-2">
             <button

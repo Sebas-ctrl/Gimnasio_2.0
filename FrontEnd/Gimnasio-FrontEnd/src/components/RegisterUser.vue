@@ -42,7 +42,7 @@ export default {
     components: {
         Persona,
         Usuario
-    }
+    },
 }
 
 </script>
