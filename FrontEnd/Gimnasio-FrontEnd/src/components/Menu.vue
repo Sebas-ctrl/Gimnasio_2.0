@@ -11,10 +11,12 @@
    <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul class="space-y-2 font-medium">
          <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <span class="material-symbols-outlined">home</span>
-               <span class="ms-3">Dashboard</span>
-            </a>
+            <RouterLink to="/dashboard">
+               <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <span class="material-symbols-outlined">home</span>
+                  <span class="ms-3">Dashboard</span>
+               </a>
+            </RouterLink>
          </li>
          
          <li>
@@ -168,13 +170,19 @@
             </button>
             <ul id="dropdown-example3" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Membresias</a>
+                     <RouterLink to="/membresias">
+                        <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Membresias</a>
+                     </RouterLink>
                   </li>
                   <li>
-                     <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Miembros</a>
+                     <RouterLink to="/miembros">
+                        <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Miembros</a>
+                     </RouterLink>
                   </li>
                   <li>
-                     <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Transacción pagos</a>
+                     <RouterLink to="/transaccion-pagos">
+                        <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Transacción pagos</a>
+                     </RouterLink>
                   </li>
             
             </ul>
