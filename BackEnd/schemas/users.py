@@ -3,17 +3,14 @@ from pydantic import BaseModel
 from datetime import datetime
 
 class UserBase(BaseModel):
-    id:str
-    nombre:str
-    primer_apellido: str
-    segundo_apellido: str
-    direccion: str
-    telefono: str
-    correo: str
-    sangre: str
-    fecha_nacimiento: datetime
-    created_at:datetime = datetime.now()
-    estatus:bool=False
+    Persona_ID : int
+    Nombre_Usuario: str
+    Correo_Electronico: str
+    Contrasena: str
+    Numero_Telefonico_Movil: str
+    Estatus: str
+    Fecha_Registro : datetime
+    Fecha_Actualizacion : datetime
 
 class UserCreate(UserBase):
     pass
