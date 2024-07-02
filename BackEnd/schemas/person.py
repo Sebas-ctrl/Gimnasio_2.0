@@ -2,7 +2,7 @@ from typing import List, Union
 from pydantic import BaseModel
 from datetime import datetime
 
-class UserBase(BaseModel):
+class PersonBase(BaseModel):
     id:str
     nombre:str
     primer_apellido: str
@@ -15,13 +15,13 @@ class UserBase(BaseModel):
     created_at:datetime = datetime.now()
     estatus:bool=False
 
-class UserCreate(UserBase):
+class PersonCreate(PersonBase):
     pass
 
-class UserUpdate(UserBase):
+class PersonUpdate(PersonBase):
     pass
 
-class User(UserBase):
+class Person(PersonBase):
     id: int
 
     class Config:

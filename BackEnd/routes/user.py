@@ -38,10 +38,10 @@ def create_user(user: schemas.users.UserCreate, db: Session = Depends(get_db)):
 
 @user.put("/user/{id}", response_model=schemas.users.User, tags=["Usuarios"])
 def update_user(id: int, user: schemas.users.UserUpdate, db: Session = Depends(get_db)):
-    db_user = crud.users.update_user(db=db, user=user)
+    db_user = crud.users.update_user(db=db, id=id, user=user)
     if db_user:
         raise HTTPException(status_code=400, detail="Usuario no existe, no se pudo actualizar")
-    return crud.users.update_user(db=db, user=user)
+    return db_user
 
 @user.delete("/user/{id}", response_model=schemas.users.User, tags=["Usuarios"])
 def delete_user(id: int, db: Session = Depends(get_db)):
