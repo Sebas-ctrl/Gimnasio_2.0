@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from routes.user import user
-from routes.person import person
+from routes.personas import persona
 
 app = FastAPI()
 app.include_router(user)
-app.include_router(person)
+app.include_router(persona)
 
 print("¡Hello! Welcome to my Backend") 
