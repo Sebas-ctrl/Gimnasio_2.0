@@ -26,8 +26,8 @@ def read_usuarios_roles(skip: int = 0, limit: int = 10, db: Session = Depends(ge
     return db_users
 
 @usuario_rol.post("/usuario_rol/{id}", response_model=schemas.usuarios_roles.Usuario_Rol, tags=["Usuarios_Roles"])
-def read_usuarios_roles(id: int, db: Session = Depends(get_db)):
-    db_user= crud.usuarios_roles.get_usuario_rol(db=db, id=id)
+def read_usuarios_roles(usuario_id: int, rol_id: int, db: Session = Depends(get_db)):
+    db_user= crud.usuarios_roles.get_usuario_rol(db=db, usuario_id=usuario_id, rol_id=rol_id)
     if db_user is None:
         raise HTTPException(status_code=404, detail="Rol not found")
     return db_user
@@ -47,8 +47,8 @@ def update_usuarios_roles(id: int, roles: schemas.usuarios_roles.Usuario_RolUpda
     return db_user
 
 @usuario_rol.delete("/usuario_rol/{id}", response_model=schemas.usuarios_roles.Usuario_Rol, tags=["Usuarios_Roles"])
-def delete_usuarios_roles(id: int, db: Session = Depends(get_db)):
-    db_user = crud.usuarios_roles.delete_usuario_rol(db=db, id=id)
+def delete_usuarios_roles(usuario_id: int, rol_id: int, db: Session = Depends(get_db)):
+    db_user = crud.usuarios_roles.delete_usuario_rol(db=db, usuario_id=usuario_id, rol_id=rol_id)
     if db_user is None:
         raise HTTPException(status_code=404, detail="Rol no existe, no se pudo eliminar")
     return db_user
