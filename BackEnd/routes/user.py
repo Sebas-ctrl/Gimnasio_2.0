@@ -42,6 +42,7 @@ def updateUser(update_user:models_user, user_id: str):
     print(update_user)
     for index, user in enumerate(users):
         if user.id == user_id:
+            update_user.id = user.id
             update_user.created_at = user.created_at
         
             users[index] = update_user
