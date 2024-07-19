@@ -10,7 +10,7 @@ class Usuario_Rol(Base):
     __tablename__ = "tbd_usuarios_roles"
 
     ID = Column(Integer, primary_key=True, index=True)
-    Usuario_ID = Column(Integer, ForeignKey("tbb_usuarios.id"))
+    Usuario_ID = Column(Integer, ForeignKey("tbb_usuarios.ID"))
     Rol_ID = Column(Integer, ForeignKey("tbc_roles.ID"))
     #Contrasena = Column(String(40))
     Estatus = Column(Boolean)

@@ -1,21 +1,20 @@
 from typing import List, Union
-from pydantic import BaseModel
-from datetime import datetime
+from pydantic  import BaseModel
+from datetime import datetime, date
 
 class PersonaBase(BaseModel):
-    titulo_cortesia: str
-    nombre: str
-    primer_apellido: str
-    segundo_apellido: str
-    fecha_nacimiento: datetime
-    fotografia: str
-    genero: str
-    tipo_sangre: str
-    created_at: datetime
-    estatus: bool
-    fecha_registro : datetime
-    fecha_actualizacion: datetime
-
+    Titulo_Cortesia:str
+    Nombre:str
+    Primer_Apellido:str
+    Segundo_Apellido:str
+    Fecha_Nacimiento:datetime
+    Fotografia:str
+    Genero:str
+    Tipo_Sangre:str
+    Estatus: bool
+    Fecha_Registro:datetime
+    Fecha_Actualizacion:datetime
+    # Id_persona: int
 
 class PersonaCreate(PersonaBase):
     pass
@@ -24,9 +23,8 @@ class PersonaUpdate(PersonaBase):
     pass
 
 class Persona(PersonaBase):
-    id: int
-    #owner_id: int clave foranea
+    ID:int
+    # owner_id: int clave foranea
     class Config:
         orm_mode = True
-
-
+        
