@@ -2,7 +2,6 @@ from sqlalchemy import Column, Integer, String,  DateTime, ForeignKey, Enum
 from sqlalchemy.dialects.mysql import LONGTEXT
 from sqlalchemy.orm import relationship
 from config.db import Base
-import models.personas
 import enum
 
 
