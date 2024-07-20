@@ -26,7 +26,7 @@ class User(UserBase):
         orm_mode = True
 class UserLogin(BaseModel):
     Nombre_Usuario: Optional[str]= None
-    Correo_celectronico : Optional[str]= None
+    Correo_Electronico : Optional[str]= None
     Contrasena : Optional[str]= None
     Numero_Telefonico_Movil: Optional[str]= None
 
